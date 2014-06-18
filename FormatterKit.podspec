@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.resource_bundles = { 'FormatterKit' => ['Localizations/**'] }
+  s.source_files = 'FormatterKit/FormatterKit.h'
 
   s.subspec 'AddressFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTAddressFormatter.{h,m}'
