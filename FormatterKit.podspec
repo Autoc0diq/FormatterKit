@@ -13,40 +13,39 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.resource_bundles = { 'FormatterKit' => ['Localizations/**'] }
-  s.source_files = 'FormatterKit/FormatterKit.h'
 
   s.subspec 'AddressFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTAddressFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTAddressFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
     ss.osx.frameworks = 'AddressBook'
     ss.ios.frameworks = 'AddressBook', 'AddressBookUI'
   end
 
   s.subspec 'ArrayFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTArrayFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTArrayFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
   end
 
   s.subspec 'ColorFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTColorFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTColorFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
   end
 
   s.subspec 'LocationFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTLocationFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTLocationFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
     ss.frameworks = 'CoreLocation'
   end
 
   s.subspec 'OrdinalNumberFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTOrdinalNumberFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTOrdinalNumberFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
   end
 
   s.subspec 'TimeIntervalFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTTimeIntervalFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTTimeIntervalFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
   end
 
   s.subspec 'UnitOfInformationFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTUnitOfInformationFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTUnitOfInformationFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
   end
 
   s.subspec 'URLRequestFormatter' do |ss|
-    ss.source_files = 'FormatterKit/TTTURLRequestFormatter.{h,m}'
+    ss.source_files = ['FormatterKit/TTTURLRequestFormatter.{h,m}', 'FormatterKit/FormatterKit.h']
   end
 end
