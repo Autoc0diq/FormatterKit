@@ -5,6 +5,9 @@
       location = "group:FormatterKit"
       name = "FormatterKit">
       <FileRef
+         location = "group:FormatterKit.h">
+      </FileRef>
+      <FileRef
          location = "group:TTTAddressFormatter.h">
       </FileRef>
       <FileRef
